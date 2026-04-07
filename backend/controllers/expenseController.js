@@ -15,7 +15,18 @@ exports.getAll = async (req, res) => {
     const sortField = allowedSortFields.includes(sortBy) ? sortBy : 'date';
     const sortOrder = order === 'asc' ? 1 : -1;
 
-    const expenses = await Expense.find(filter).sort({ [sortField]: sortOrder });
+    // Secondary sort by createdAt keeps ordering deterministic when primary keys tie
+    const sortSpec = { [sortField]: sortOrder };
+    if (sortField !== 'createdAt') sortSpec.createdAt = sortOrder;
+
+    let query = Expense.find(filter).sort(sortSpec);
+
+    // Case-insensitive A-Z ordering for title sort
+    if (sortField === 'title') {
+      query = query.collation({ locale: 'en', strength: 2 });
+    }
+
+    const expenses = await query;
     res.json(expenses);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch expenses' });
