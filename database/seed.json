@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Weekly groceries",
+    "category": "Food",
+    "amount": 87.50,
+    "date": "2026-04-01",
+    "notes": "Woolworths weekly shop"
+  },
+  {
+    "title": "Monthly bus pass",
+    "category": "Transport",
+    "amount": 55.00,
+    "date": "2026-04-01",
+    "notes": ""
+  },
+  {
+    "title": "Netflix subscription",
+    "category": "Entertainment",
+    "amount": 22.99,
+    "date": "2026-04-02",
+    "notes": "Standard HD plan"
+  },
+  {
+    "title": "Electricity bill",
+    "category": "Bills",
+    "amount": 134.20,
+    "date": "2026-04-03",
+    "notes": "March–April period"
+  },
+  {
+    "title": "GP visit",
+    "category": "Health",
+    "amount": 45.00,
+    "date": "2026-04-03",
+    "notes": "Bulk billed, out-of-pocket gap"
+  },
+  {
+    "title": "Lunch at cafe",
+    "category": "Food",
+    "amount": 18.50,
+    "date": "2026-04-04",
+    "notes": ""
+  },
+  {
+    "title": "New running shoes",
+    "category": "Shopping",
+    "amount": 129.95,
+    "date": "2026-04-05",
+    "notes": "Nike Pegasus 41"
+  },
+  {
+    "title": "Spotify",
+    "category": "Entertainment",
+    "amount": 11.99,
+    "date": "2026-04-05",
+    "notes": ""
+  },
+  {
+    "title": "Uber to airport",
+    "category": "Transport",
+    "amount": 38.00,
+    "date": "2026-04-06",
+    "notes": ""
+  },
+  {
+    "title": "Internet bill",
+    "category": "Bills",
+    "amount": 89.00,
+    "date": "2026-04-06",
+    "notes": "NBN 100/20 plan"
+  }
+]
